@@ -1,6 +1,6 @@
 /** Face recognition descriptor is held in memory only until the API request. */
 const NovaFace=(()=>{
-  const MODEL_URL='https://justadudewhohacks.github.io/face-api.js/models';
+  const MODEL_URL='https://cdn.jsdelivr.net/gh/justadudewhohacks/face-api.js@master/weights';
   let stream=null,active=false,modelsReady=false;
   const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
   async function loadModels(){
